@@ -15,9 +15,6 @@ The size of the block. Reads *blocksize* byte(s) data from source file, and writ
 * elapsed time
 * ETA
 
-### Contributing
-Your contributions are always welcome!
-
 ### Screenshot
 ![Screenshot](screenshot.png)
 
@@ -37,3 +34,6 @@ Blocksize | Time | Speed
 1024 B | 02:05 | ~4MB/s
 4096 B | 00:31 | ~16MB/s
 8192 B | 00:15 | ~32MB/s
+
+### Contributing
+Your contributions are always welcome!
