@@ -1,12 +1,12 @@
 # Copy advanced
-The default cp command with some human-friendly feature.
+The default cp command with some human-friendly features.
 
 ### Usage
-        python3 copyadvanced.py <sourcefile> <destinationfile> [blocksize]
+        copyadvanced.py <sourcefile> <destinationfile> [blocksize]
 
 ### Blocksize
 The size of the block. Reads *blocksize* byte(s) data from source file, and writes to destination file. 
-**Warning!** *blocksize* should be less than the available memory.
+**Warning!** *blocksize* should be less than the available memory. Default is 32768.
 
 ### Features
 * progressbar
@@ -36,5 +36,5 @@ Blocksize | Time | Speed
 8192 B | 00:15 | ~32MB/s
 32768 B | 00:03 | ~120MB/s
 
-### Contributing
+### Contributions
 Your contributions are always welcome!
