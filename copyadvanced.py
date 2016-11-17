@@ -1,17 +1,22 @@
 #!/usr/bin/env python3
 
-#Created by: Janos Villas
-#University of Debrecen
+"""
+Created by: Janos Villas
+E-mail: villas_jancsi@windowslive.com
+University of Debrecen
+"""
 
 
 import sys
 import os
 import time
 
+DefaultBlockSize = 32768
+
 def main():
     #Handling the error if user called the program with no/invalid parameters.
     if len(sys.argv) < 3:
-        print("usage: {0} <source file> <destination file> <blocksize>".format(sys.argv[0]))
+        print("usage: {0} <source file> <destination file> [blocksize]".format(sys.argv[0]))
         exit(1)
     print("Beginning copy...")
     #Opening the source file for read
@@ -20,7 +25,7 @@ def main():
         with open(sys.argv[2], "w") as f2:
             #Init variables
             totalbytes = os.path.getsize(sys.argv[1])
-            blocksize = int(sys.argv[3] if len(sys.argv) == 4 else 1024)
+            blocksize = int(sys.argv[3] if len(sys.argv) == 4 else DefaultBlockSize)
             bytes = 0
             bytes_tmp = 0
             lastbytes = 0
