@@ -34,6 +34,7 @@ Blocksize | Time | Speed
 1024 B | 02:05 | ~4MB/s
 4096 B | 00:31 | ~16MB/s
 8192 B | 00:15 | ~32MB/s
+32768 B | 00:03 | ~120MB/s
 
 ### Contributing
 Your contributions are always welcome!
