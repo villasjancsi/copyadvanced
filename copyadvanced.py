@@ -37,7 +37,7 @@ def main():
             speed = 0
             #The copy-loop, which reads -blocksize- bytes from the source file
             #and writes it to destination file
-            while(True):
+            while True:
                 byte = f1.read(blocksize)
                 if byte == "":
                     break
